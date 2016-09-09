@@ -1,0 +1,64 @@
+<html>
+
+<head>
+	
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>The sideMenu Plugin - A Solution to "Fixed" Animated Menus in jQuery</title>
+	
+	<link rel="stylesheet" href="example.css">
+	<link rel="stylesheet" href="sideMenuPlugin.css">
+
+	<script src="jquery-1.7.2.min.js"></script>
+	<script src="jquery.hoverflow/jquery.hoverflow.min.js"></script>
+	<script src="sideMenuPlugin.js"></script>
+	
+	<script>
+	$(document).ready(function() {
+		$("#target1").sideMenu(
+			{
+				btnSpecs : 
+					[
+						{type: "button", image: "CSV.png", action : function(){alert("You've clicked CSV.");}},
+						{type: "link", image: "CSV.png", download: "file.csv", href: "example_data.csv"},
+					]
+			}
+		);
+		
+		$("#target2").sideMenu();
+		
+		$("#target3").sideMenu(
+			{
+				side:"right"
+			}
+		);
+	});
+	</script>
+	
+</head>
+
+<body>
+	<p>Scroll Down!</p>
+	<div class='padder'></div>
+
+	<div id='container'>
+
+		<div class='sidemenuwrapper'>
+			<div id='target1' class='target'>This is a table!</div>
+		</div>
+		
+		<div class='sidemenuwrapper'>
+			<div id='target2' class='target'>This is another table!</div>
+		</div>
+		
+		<div class='sidemenuwrapper'>
+			<div id='target3' class='target'>This is a different table!</div>
+		</div>
+		
+	</div>
+	
+	<div class="padder"></div>
+
+</body>
+
+</html>
+

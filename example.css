@@ -1,0 +1,17 @@
+.padder {
+	height: 1000px;
+}
+
+#container {
+	text-align: center;
+	border: 1px solid black;
+}
+
+.target {
+	position: relative;
+	background-color: lightblue;
+	height: 400px;
+	width: 300px;
+	margin: 15px 20px 15px 80px;
+}
+
