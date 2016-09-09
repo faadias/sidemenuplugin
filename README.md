@@ -1,2 +1,2 @@
 # sidemenuplugin
-A jQuery plugin that creates a scrolling menu to HTML objects.
+A Scrolling Animated Menu Attached to HTML Objects
