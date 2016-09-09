@@ -1,3 +1,26 @@
+/* sideMenuPlugin - A Scrolling Animated Menu Attached to HTML Objects
+ * 
+ * Copyright 2013 Felipe Dias
+ * 
+ * Special thanks to Ralf Stoltze, whose jquery plugin 'hoverFlow' was
+ * the best plugin I could find for the animation effects!
+ * 
+ * This file is part of sideMenuPlugin.
+ * 
+ * sideMenuPlugin is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ * 
+ * sideMenuPlugin is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ * 
+ * You should have received a copy of the GNU General Public License
+ * along with sideMenuPlugin.  If not, see <http://www.gnu.org/licenses/>.
+ */
+
 .sidemenuwrapper {
 	position: relative;
 	display: inline-block;
@@ -20,5 +43,13 @@
 	left: 0;
 	width: inherit;
 	height: inherit;
+}
+
+.sidemenu-missing-image-left {
+	background-image: url('imgs/missing_specs_left.png');
+}
+
+.sidemenu-missing-image-right {
+	background-image: url('imgs/missing_specs_right.png');
 }
 
